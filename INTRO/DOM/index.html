@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="python">Python</div>
+    <div id="javascript">JavaScript</div>
+
+    <div class="python"></div>
+    <div class="python"></div>
+    <div class="js"></div>
+
+    <br>
+    <form action=""></form>
+    <button>Button</button>
+
+    <div id="test1">1</div>
+    <div class="test2">2</div>
+    <p>test3</p>
+    <p class="test4">test4</p>
+    <p class="test4">test5</p>
+    <p class="test4">test6</p>
+
+    <script>
+        console.log(
+            document.getElementById('python').innerHTML,
+            document.getElementById('javascript').innerHTML
+        ),
+
+        console.log(
+            document.getElementsByClassName('python')[0],
+            document.getElementsByClassName('js')
+        ),
+
+        console.log(
+            document.getElementsByTagName('br'),
+            document.getElementsByTagName('br')[0],
+            document.getElementsByTagName('form'),
+            document.getElementsByTagName('form')[0],
+            document.getElementsByTagName('button'),
+            document.getElementsByTagName('button')[0],
+        ),
+
+        console.log(
+            // no array in class
+            document.querySelector('#test1'),
+            document.querySelector('.test2'),
+            document.querySelector('p'),
+            document.querySelector('p.test4'),
+        )
+    </script>
+</body>
+</html>
